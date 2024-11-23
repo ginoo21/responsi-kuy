@@ -1,0 +1,112 @@
+body {
+  font-family: "Arial", sans-serif;
+  padding-top: 56px;
+}
+
+.hero {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), backurl("https://science.nasa.gov/wp-content/uploads/2023/10/edu-solar-system-large.png?w=1280&format=webp"); */
+  background-size: cover;
+  background-image: url(Assets/universe.jpg);
+  background-position: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: rgba(33, 37, 41, 0.9) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  background-color: #406082;
+  transition: width 1.5s ease-in-out;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills .progress {
+  background-color: #4b739d;
+  height: 25px;
+  margin-bottom: 1rem;
+}
+
+#projects .card {
+  height: 100%;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+/* Animasi tambahan untuk AOS */
+[data-aos] {
+  opacity: 0;
+  transition-duration: 1000ms;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Gaya untuk tombol unduh CV */
+.navbar-nav .nav-link[download] {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Gaya untuk modal */
+.modal-content {
+  border-radius: 0.5rem;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
